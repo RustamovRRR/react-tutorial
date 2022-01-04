@@ -25,22 +25,34 @@ function Booklist() {
         url={firstBook.imgURL}
         title={firstBook.title}
         author={firstBook.author}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perspiciatis ratione veniam beatae quibusdam optio quisquam eligendi
+          consectetur a adipisci.
+        </p>
+      </Book>
       <Book
         url={secondBook.imgURL}
         title={secondBook.title}
         author={secondBook.author}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit similique sit tenetur!
+        </p>
+      </Book>
     </section>
   );
 }
 
-const Book = ({ url, title, author }) => {
+const Book = ({ url, title, author, children }) => {
   return (
     <article>
       <img src={url} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      {children}
     </article>
   );
 };
