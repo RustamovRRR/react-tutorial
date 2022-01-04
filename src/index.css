@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fantasy;
+  color: black;
+  background-color: blanchedalmond;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+article {
+  border: 1px solid black;
+}
+
+img {
+  height: 70%;
+  object-fit: cover;
+}

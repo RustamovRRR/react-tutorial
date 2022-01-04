@@ -1,25 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// CSS
+import "./index.css";
+
 function Booklist() {
   return (
-    <div>
+    <section>
       <Book />
       <Book />
       <Book />
       <Book />
       <Book />
-    </div>
+    </section>
   );
 }
 
 const Book = () => {
   return (
-    <div>
+    <article>
       <Image />
       <Title />
       <Author />
-    </div>
+    </article>
   );
 };
 
