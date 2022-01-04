@@ -8,33 +8,24 @@ function Booklist() {
   return (
     <section>
       <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
     </section>
   );
 }
 
 const Book = () => {
+  const title = "The Brothers Karamazov";
+  const author = "Fyodor Dostoevsky";
   return (
     <article>
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/51DItJYatoL._SX324_BO1,204,203,200_.jpg"
+        alt=""
+      />
+      <h1>{title}</h1>
+      <h4>{author.toUpperCase()}</h4>
     </article>
   );
 };
-
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/51DItJYatoL._SX324_BO1,204,203,200_.jpg"
-    alt=""
-  />
-);
-
-const Title = () => <h1>The Brothers Karamazov</h1>;
-const Author = () => <h4>Fyodor Dostoevsky</h4>;
 
 // const Greeting = () => {
 //   return React.createElement("h1", {}, "Hello Piter");

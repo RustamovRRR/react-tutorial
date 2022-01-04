@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: fantasy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   background-color: blanchedalmond;
 }
@@ -22,4 +22,8 @@ article {
 img {
   height: 70%;
   object-fit: cover;
+}
+h4 {
+  margin: 0.25rem;
+  color: rgb(56, 56, 170);
 }
