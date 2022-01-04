@@ -22,6 +22,7 @@ article {
 img {
   height: 70%;
   object-fit: cover;
+  width: 70%;
 }
 h4 {
   margin: 0.25rem;
