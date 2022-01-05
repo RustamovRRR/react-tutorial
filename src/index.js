@@ -7,15 +7,16 @@ import "./index.css";
 // setup variables
 const books = [
   {
+    id: 1,
     title: "The Brothers Karamazov",
     author: "Fyodor Dostoevsky",
-    imgURL:
-      "https://images-na.ssl-images-amazon.com/images/I/51DItJYatoL._SX324_BO1,204,203,200_.jpg",
+    url: "https://images-na.ssl-images-amazon.com/images/I/51DItJYatoL._SX324_BO1,204,203,200_.jpg",
   },
   {
+    id: 2,
     title: "The Sandman: Act II",
     author: "Neil Gaiman",
-    imgURL: "https://m.media-amazon.com/images/I/51UYl4VBMRL.jpg",
+    url: "https://m.media-amazon.com/images/I/51UYl4VBMRL.jpg",
   },
 ];
 
@@ -23,14 +24,13 @@ function Booklist() {
   return (
     <section>
       {books.map((book) => {
-        return <Book book={book}></Book>;
+        return <Book key={book.id} {...book}></Book>;
       })}
     </section>
   );
 }
 
-const Book = (props) => {
-  const { url, title, author } = props.book;
+const Book = ({ url, title, author }) => {
   return (
     <article>
       <img src={url} alt="" />
